@@ -1,0 +1,8 @@
+#/bin/zsh
+
+FILE_NAME=vscode_packages.txt
+
+while read LINE
+do
+  code --install-extension ${LINE}
+done < ${FILE_NAME}
